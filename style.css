@@ -58,7 +58,6 @@ body {
 }
 
 #smile {
-    /* smile spritesheet includes sprites with decorations, like border */
     width: 19px;
     height: 19px;
 
@@ -68,6 +67,6 @@ body {
 
     box-shadow: 0px 0px 0px 1px gray;
 
-    background-image: url("./img/smile.png");
-    background-position: -3px -3px;
+    background-image: url("./img/smiles_nobg.png");
+    background-position: 0 0;
 }
