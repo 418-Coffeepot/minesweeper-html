@@ -1,3 +1,11 @@
+body {
+    /*
+        turn off anti-aliasing (on all browsers), all
+        used images are considered pixel art.
+    */
+    image-rendering: pixelated;
+}
+
 #board {
     width: 250px;
     height: 300px;
@@ -6,21 +14,60 @@
 
     border-style: solid;
     border-width: 3px;
-    border-color: #e4e4e4 #808080 #808080 #e4e4e4;
+    border-color: white gray gray white;
     
     padding: 6px;
     display: flex;
 }
 
+/* top */
+
 #top {
-    height: 32px;
+    height: fit-content;
     flex-grow: 1;
+    justify-content: space-between;
 
     background-color: #bdbdbd;
     
     border-style: solid;
-    border-width: 3px;
-    border-color: #808080 #e4e4e4 #e4e4e4 #808080;
+    border-width: 2px;
+    border-color: gray white white gray;
 
-    padding: 3px;
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+}
+
+.counter {
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray white white gray;
+
+    width: fit-content;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.num {
+    width: 13px;
+    height: 23px;
+
+    background: url("./img/score.png") 0px 0px;
+}
+
+#smile {
+    /* smile spritesheet includes sprites with decorations, like border */
+    width: 19px;
+    height: 19px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: white gray gray white;
+
+    box-shadow: 0px 0px 0px 1px gray;
+
+    background-image: url("./img/smile.png");
+    background-position: -3px -3px;
 }
