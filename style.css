@@ -7,8 +7,8 @@ body {
 }
 
 #board {
-    width: 250px;
-    height: 300px;
+    width: fit-content;
+    height: fit-content;
 
     background-color: #bdbdbd;
 
@@ -18,6 +18,7 @@ body {
     
     padding: 6px;
     display: flex;
+    flex-direction: column;
 }
 
 /* top */
@@ -69,4 +70,29 @@ body {
 
     background-image: url("./img/smiles_nobg.png");
     background-position: 0 0;
+}
+
+/* cells */
+
+#cells {
+    border-style: solid;
+    border-width: 3px;
+    border-color: gray white white gray;
+
+    flex-grow: 1;
+    height: fit-content;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 16px;
+    height: 16px;
+    background-color: #bdbdbd;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: white gray gray white;
 }
